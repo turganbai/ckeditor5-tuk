@@ -28,6 +28,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import ShowTools from '../plugins/ShowTools';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -54,7 +55,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Alignment
+	Alignment,
+	ShowTools
 ];
 
 // Editor configuration.
@@ -74,7 +76,8 @@ ClassicEditor.defaultConfig = {
 			'mediaEmbed',
 			'undo',
 			'redo',
-			'alignment'
+			'alignment',
+			'show_tools'
 		]
 	},
 	image: {
@@ -93,5 +96,17 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'en',
 };
+
+ClassicEditor
+	.create( document.querySelector( '#editor' ), {
+		// plugins: [ Essentials, Paragraph, Bold, Italic, Image, ShowTools, ImageCaption ],
+		// toolbar: [ 'bold', 'italic', 'show_tools' ]
+	} )
+	.then( editor => {
+		console.log( 'Editor was initialized', editor );
+	} )
+	.catch( error => {
+		console.error( error.stack );
+	} );
