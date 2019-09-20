@@ -8,6 +8,9 @@
 			max-width: 800px;
 			margin: 20px auto;
 		}
+		.show-tools {
+			margin-left: auto !important;
+		}
 	</style>
 </head>
 <body>
@@ -17,6 +20,15 @@
 <div id="editor"></div>
 
 <script src="../build/ckeditor.js"></script>
+<script>
 
+    ClassicEditor
+        .create( document.querySelector( '#editor' ))
+        .then( editor => {
+        } )
+        .catch( error => {
+        } );
+
+</script>
 </body>
 </html>

@@ -100,16 +100,3 @@ ClassicEditor.defaultConfig = {
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en',
 };
-
-ClassicEditor
-	.create( document.querySelector( '#editor' ), {
-		// plugins: [ Essentials, Paragraph, Bold, Italic, Image, ShowTools, ImageCaption ],
-		// toolbar: [ 'bold', 'italic', 'show_tools' ]
-	} )
-	.then( editor => {
-		editor;
-	} )
-	.catch( error => {
-		error;
-	} );
-
