@@ -1,8 +1,7 @@
-
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 
-import ShowToolsIcon from '@ckeditor/ckeditor5-core/theme/icons/low-vision.svg';
+import ShowToolsIcon from '../icons/menu.svg';
 
 class ShowTools extends Plugin {
 	init() {
@@ -14,17 +13,29 @@ class ShowTools extends Plugin {
 			view.set( {
 				label: 'show tools',
 				icon: ShowToolsIcon,
-				tooltip: true
+				tooltip: true,
+				class: 'show-tools',
 			} );
 
 			// Callback executed once the image is clicked.
+			const toolbarBlock = document.querySelector( '.ck-toolbar' );
+
 			view.on( 'execute', () => {
-				console.log(editor);
-				editor.destroy();
+				toolbarBlock.childNodes.forEach( ( child, index ) => {
+					if ( index > 2 ) {
+						if ( child.style.display == 'none' ) {
+							child.style.display = 'block';
+						} else {
+							child.style.display = 'none';
+						}
+					}
+				} );
+				toolbarBlock.lastChild.style.display = 'block';
 			} );
 
 			return view;
 		} );
 	}
 }
+
 export default ShowTools;

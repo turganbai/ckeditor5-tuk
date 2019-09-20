@@ -64,7 +64,6 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
-			'|',
 			'bold',
 			'italic',
 			'link',
@@ -105,8 +104,9 @@ ClassicEditor
 		// toolbar: [ 'bold', 'italic', 'show_tools' ]
 	} )
 	.then( editor => {
-		console.log( 'Editor was initialized', editor );
+		editor;
 	} )
 	.catch( error => {
-		console.error( error.stack );
+		error;
 	} );
+
