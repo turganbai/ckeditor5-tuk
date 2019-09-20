@@ -22,7 +22,7 @@ class ShowTools extends Plugin {
 
 			view.on( 'execute', () => {
 				toolbarBlock.childNodes.forEach( ( child, index ) => {
-					if ( index > 2 ) {
+					if ( index > 3 ) {
 						if ( child.style.display == 'none' ) {
 							child.style.display = 'block';
 						} else {
