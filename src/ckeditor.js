@@ -57,41 +57,41 @@ ClassicEditor.builtinPlugins = [
 	CustomHeading,
 	ShowTools,
 ];
-
-ClassicEditor.defaultConfig = {
-	toolbar: {
-		items: [
-			// 'heading',
-			'custom_heading',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo',
-			'alignment',
-			'show_tools',
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	},
-	language: 'en',
-};
+//
+// ClassicEditor.defaultConfig = {
+// 	toolbar: {
+// 		items: [
+// 			// 'heading',
+// 			'custom_heading',
+// 			'bold',
+// 			'italic',
+// 			'link',
+// 			'bulletedList',
+// 			'numberedList',
+// 			'imageUpload',
+// 			'blockQuote',
+// 			'insertTable',
+// 			'mediaEmbed',
+// 			'undo',
+// 			'redo',
+// 			'alignment',
+// 			'show_tools',
+// 		]
+// 	},
+// 	image: {
+// 		toolbar: [
+// 			'imageStyle:full',
+// 			'imageStyle:side',
+// 			'|',
+// 			'imageTextAlternative'
+// 		]
+// 	},
+// 	table: {
+// 		contentToolbar: [
+// 			'tableColumn',
+// 			'tableRow',
+// 			'mergeTableCells'
+// 		]
+// 	},
+// 	language: 'en',
+// };

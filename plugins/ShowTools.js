@@ -17,8 +17,12 @@ class ShowTools extends Plugin {
 				class: 'show-tools',
 			} );
 
-			// Callback executed once the image is clicked.
 			const toolbarBlock = document.querySelector( '.ck-toolbar' );
+			toolbarBlock.childNodes.forEach( ( child, index ) => {
+				if ( index > 3 ) {
+					child.style.display = 'none';
+				}
+			} );
 
 			view.on( 'execute', () => {
 				toolbarBlock.childNodes.forEach( ( child, index ) => {
@@ -27,10 +31,10 @@ class ShowTools extends Plugin {
 							child.style.display = 'block';
 						} else {
 							child.style.display = 'none';
+							toolbarBlock.lastChild.style.display = 'block';
 						}
 					}
 				} );
-				toolbarBlock.lastChild.style.display = 'block';
 			} );
 
 			return view;
