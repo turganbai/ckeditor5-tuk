@@ -17,9 +17,10 @@ The classic editor build for CKEditor 5. Read more about the [classic editor bui
 First, install the build from npm:
 
 ```bash
+git clone https://github.com/turganbai/ckeditor5-tuk.git
+cd ckeditor5-tuk                                    
+npm install                                         
 npm install --save tuk-ckeditor5-classic
-or
-yarn add tuk-ckeditor5-classic
 ```
 
 And use it in your website:

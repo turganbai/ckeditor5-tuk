@@ -27,8 +27,10 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Mention from '@ckeditor/ckeditor5-mention/src/mention';
 import ShowTools from '../plugins/ShowTools';
 import CustomHeading from '../plugins/CustomHeading';
+import MentionCustomization from '../plugins/MentionCustomization';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,6 +58,8 @@ ClassicEditor.builtinPlugins = [
 	Alignment,
 	CustomHeading,
 	ShowTools,
+	Mention,
+	MentionCustomization
 ];
 //
 // ClassicEditor.defaultConfig = {

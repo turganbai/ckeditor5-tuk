@@ -1,6 +1,6 @@
 {
 	"name": "tuk-ckeditor5-classic",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
 	"keywords": [
 		"ckeditor5",
@@ -29,6 +29,7 @@
 		"@ckeditor/ckeditor5-link": "^11.1.2",
 		"@ckeditor/ckeditor5-list": "^12.1.0",
 		"@ckeditor/ckeditor5-media-embed": "^11.1.4",
+		"@ckeditor/ckeditor5-mention": "^13.0.0",
 		"@ckeditor/ckeditor5-paragraph": "^11.0.5",
 		"@ckeditor/ckeditor5-paste-from-office": "^11.1.0",
 		"@ckeditor/ckeditor5-table": "^14.0.0",
